@@ -5,9 +5,6 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
-import Photography from "@/components/Photography";
-import Fitness from "@/components/Fitness";
-import Writing from "@/components/Writing";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { siteMeta } from "@/lib/data";
@@ -41,9 +38,6 @@ export default function Home() {
         <Experience />
         <Skills />
         <Projects />
-        <Photography />
-        <Fitness />
-        <Writing />
         <Contact />
         <Footer />
       </main>
