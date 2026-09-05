@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-fraunces: "Fraunces", serif;
+  --font-plex-sans: "IBM Plex Sans", sans-serif;
+  --font-plex-mono: "IBM Plex Mono", monospace;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-plex-sans);
+  background-color: #EDE6D6;
+  color: #12181B;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body.dark {
+  background-color: #12181B;
+  color: #EDE6D6;
+}
+
+::selection {
+  background-color: #C9A227;
+  color: #12181B;
+}
+
+:focus-visible {
+  outline: 2px solid #C9A227;
+  outline-offset: 3px;
+}
+
+/* --- The spine: the single recurring structural motif of the site --- */
+.spine {
+  position: relative;
+}
+
+.spine::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: currentColor;
+  opacity: 0.25;
+}
+
+.spine-dot {
+  position: absolute;
+  left: -4px;
+  width: 9px;
+  height: 9px;
+  border-radius: 9999px;
+  background: #C9A227;
+}
+
+/* Grain overlay */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: url("/grain.svg");
+  background-size: 200px 200px;
+  z-index: 40;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #C9A227;
+  opacity: 0.6;
+  border-radius: 9999px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
