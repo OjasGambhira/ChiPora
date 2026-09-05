@@ -16,7 +16,7 @@ export default function Writing() {
         </h2>
         <p className="mt-6 max-w-prose text-lg leading-relaxed text-parchment/75">
           A slow-building body of work retelling the Mahabharata and
-          Ramayana for readers who've never opened a version of either — with
+          Ramayana for readers who’ve never opened a version of either — with
           the psychology left in, not smoothed over.
         </p>
 

@@ -65,7 +65,7 @@ export default function Hero() {
           className="mt-8 max-w-prose text-balance text-lg leading-relaxed text-ink/80 dark:text-parchment/80"
         >
           {siteMeta.tagline} By day I move Azure workloads and REST APIs
-          around a bank's infrastructure. Off the clock, I chase forest light
+          around a bank’s infrastructure. Off the clock, I chase forest light
           around NRW, retell old Indian epics for a modern reader, and try to
           out-eat a fast metabolism.
         </motion.p>

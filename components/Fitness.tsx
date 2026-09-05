@@ -13,7 +13,7 @@ export default function Fitness() {
         </h2>
         <p className="mt-6 max-w-prose text-lg leading-relaxed text-ink/80 dark:text-parchment/80">
           A lean, fast-metabolism build and a history of inconsistent
-          training mean the plan matters more than the motivation. Here's
+          training mean the plan matters more than the motivation. Here’s
           the system currently running.
         </p>
 
